@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "openCV-ext",
+	"name": "hackathon",
 	"version": "1.0",
-	"description": "web browser motion detection",
-	"permissions": ["declarativeContent","storage"],
+	"description": "HACKATHON",
+	"permissions": ["declarativeContent","storage","tabs"],
 	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
 	"background": {
       "scripts": ["background.js"],
