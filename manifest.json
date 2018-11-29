@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "openCV-ext",
+	"version": "1.0",
+	"description": "web browser motion detection",
+	"permissions": ["declarativeContent","storage"],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+	"content_scripts":[
+		{"matches":["https://www.google.com/"],
+		"js": ["index.js"]
+	}
+],
+"page_action": {
+		 "default_popup": "index.html"
+	 }
+}
