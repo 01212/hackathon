@@ -136,7 +136,7 @@ const red = new cv.Vec(0, 0, 255);
 
 // main
 const delay = 20;
-grabFrames('./uploads/handgesture1.webm', delay, (frame) => {
+grabFrames('./test.webm', delay, (frame) => {
   const resizedImg = frame.resizeToMax(640);
 
   const handMask = makeHandMask(resizedImg);
